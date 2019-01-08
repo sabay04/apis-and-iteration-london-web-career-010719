@@ -31,10 +31,10 @@ end
 def character_personal_data(character_data)
 
     character_data.each do |key, value|
-        puts "------------------------------------------------------"
-        puts "Name: #{character_data["name"]}"
-        puts "Height: #{character_data["height"]}"
-        puts "Mass: #{character_data["mass"]}"
+        puts "========   #{character_data["name"]}   ========\n"
+        #{}puts "Name: #{character_data["name"]}"
+        puts "Height: #{character_data["height"]}cm"
+        puts "Mass: #{character_data["mass"]}kg"
         puts "Hair colour: #{character_data["hair_color"]}"
         puts "Skin color: #{character_data["skin_color"]}"
         puts "Eye color: #{character_data["eye_color"]}"
@@ -60,8 +60,8 @@ end
 def print_movies(films)
   # some iteration magic and puts out the movies in a nice list
   films.each do |film|
-  puts "------------------------------------------------------"
-  puts "Title: #{film["title"]}"
+  puts "----------   #{film["title"]}   ----------\n"
+  #puts "Title: #{film["title"]}"
   puts "Episode: #{film["episode_id"]}"
   puts "Director: #{film["director"]}"
   puts "Producer(s): #{film["producer"]}"
