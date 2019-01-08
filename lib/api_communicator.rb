@@ -27,6 +27,25 @@ def get_character_movies(character_data)
 
   character_films
 end
+
+def character_personal_data(character_data)
+
+    character_data.each do |key, value|
+        puts "------------------------------------------------------"
+        puts "Name: #{character_data["name"]}"
+        puts "Height: #{character_data["height"]}"
+        puts "Mass: #{character_data["mass"]}"
+        puts "Hair colour: #{character_data["hair_color"]}"
+        puts "Skin color: #{character_data["skin_color"]}"
+        puts "Eye color: #{character_data["eye_color"]}"
+        puts "Birth year: #{character_data["birth_year"]}"
+        puts "Gender: #{character_data["gender"]}"
+        break
+    end
+
+end
+
+
   # iterate over the response hash to find the collection of `films` for the given
   #   `character`
   # collect those film API urls, make a web request to each URL to get the info
@@ -53,6 +72,7 @@ end
 
 def show_character_movies(character)
   character_data = get_character_data_from_api(character)
+  character_personal_data(character_data)
   films = get_character_movies(character_data)
   print_movies(films)
 end
