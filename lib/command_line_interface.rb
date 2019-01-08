@@ -1,6 +1,6 @@
 def welcome
   # puts out a welcome message here!
-  puts "Greetings Earthlins!!"
+  puts "Greetings Earthlings!!"
 end
 
 def get_character_from_user
