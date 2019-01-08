@@ -47,6 +47,8 @@ def print_movies(films)
   puts "Director: #{film["director"]}"
   puts "Producer(s): #{film["producer"]}"
   puts "Release Date: #{film["release_date"]}"
+  puts "This move had: #{film["characters"].length} character(s), #{film["species"].length} specie(s) & #{film["planets"].length} planet(s)!!"
+
   # puts "Opening Crawl: #{film["opening_crawl"][0..100]}" + "..."
   end
 end
